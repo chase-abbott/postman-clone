@@ -6,8 +6,9 @@ const ResultsArea = styled.pre`
 background-color: white;
 height: 50vh;
 border: 1px solid lightgray;
-width: 60%;
+width: 80%;
 overflow: auto;
+justify-self: end;
 `;
 
 
