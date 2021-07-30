@@ -44,7 +44,18 @@ height: 80%;
 width: 50px;
 `;
 
-const Search = ({ onMethodChange, urlInput, onTextChange, onSubmit }) => {
+const JSONBody = styled.textarea`
+width: 60%;
+height: 100px;
+`;
+
+const Search = ({ 
+  onMethodChange, 
+  urlInput, 
+  onTextChange, 
+  onSubmit,
+  body, 
+  onBodyChange }) => {
   return (
     <SearchForm onSubmit={onSubmit}>
       <SearchBar
@@ -96,6 +107,11 @@ const Search = ({ onMethodChange, urlInput, onTextChange, onSubmit }) => {
         </RadioContainer>
         <SubmitButton> Go </SubmitButton>
       </InputBar>
+      <JSONBody 
+        placeholder="Raw JSON Body"
+        name="body"
+        value={body}
+        onChange={onBodyChange}/>
     </SearchForm>
   );
 };
@@ -105,6 +121,8 @@ Search.propTypes = {
   urlInput: PropTypes.string,
   onTextChange: PropTypes.func.isRequired,
   onSubmit: PropTypes.func.isRequired,
+  body: PropTypes.string,
+  onBodyChange: PropTypes.func.isRequired,
 };
 
 export default Search;

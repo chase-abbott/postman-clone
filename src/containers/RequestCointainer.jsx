@@ -27,7 +27,7 @@ export default class RequestContainer extends Component {
   state = {
     urlInput: '',
     method: '',
-    body: {},
+    body: '',
     data: {
       'root': {
         'Yo': 'Make a Fetch!'
@@ -64,6 +64,10 @@ export default class RequestContainer extends Component {
     }
   }
 
+  handleBodyChange = ({ target }) => {
+    this.setState({ [target.name]: target.value });
+  }
+
   render(){
     return (
       <Body>
@@ -74,7 +78,10 @@ export default class RequestContainer extends Component {
           onMethodChange={this.handleMethodChange}
           urlInput={this.state.urlInput}
           onTextChange={this.handleTextChange}
-          onSubmit={this.handleSubmit}/>
+          onSubmit={this.handleSubmit}
+          body={this.state.body}
+          onBodyChange={this.handleBodyChange}/>
+         
         <Results/>
       </Body>
     );
