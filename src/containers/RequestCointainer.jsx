@@ -50,14 +50,19 @@ export default class RequestContainer extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-
     if(this.state.method !== 'GET'){
       return fetch(this.state.urlInput, {
         method: this.state.method,
+        headers: {
+          'Content-type': 'application/json; charset=UTF-8',
+        },
+        credentials: 'include',
         body: this.state.body
       })
         .then(res => res.json())
-        .then(res => this.setState({ data: res }))
+        .then(res => {
+          console.log(res);
+          return this.setState({ data: res });})
         .catch(err => console.log(err));
     } else {
       return fetch(this.state.urlInput, {

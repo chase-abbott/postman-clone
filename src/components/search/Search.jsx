@@ -9,13 +9,13 @@ align-items: center;
 width: 100%;`;
 
 const SearchBar = styled.input`
-width: 81.25vw;
+width: 79.75%;
 align-self: flex-end;
 `;
 
 const InputBar = styled.div`
 display: flex;
-width: 80%;
+width: 75%;
 justify-content: space-evenly;
 align-items: center;
 `;
@@ -60,6 +60,7 @@ const Search = ({
   return (
     <SearchForm onSubmit={onSubmit}>
       <SearchBar
+        data-testid="search-bar"
         type="text"
         name="urlInput"
         value={urlInput}
