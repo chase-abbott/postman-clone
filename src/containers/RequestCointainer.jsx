@@ -4,6 +4,9 @@ import Results from '../components/results/Results.jsx';
 import Search from '../components/search/Search.jsx';
 
 const Body = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
 width: 100%;
 height: 100%
 `;
@@ -28,11 +31,13 @@ export default class RequestContainer extends Component {
     urlInput: '',
     method: '',
     body: '',
-    data: {
-      'root': {
-        'Yo': 'Make a Fetch!'
+    data: [
+      {
+        'root': {
+          'Yo': 'Make a Fetch!'
+        }
       }
-    },
+    ],
   }
 
   handleTextChange = ({ target }) => {
@@ -82,7 +87,7 @@ export default class RequestContainer extends Component {
           body={this.state.body}
           onBodyChange={this.handleBodyChange}/>
          
-        <Results/>
+        <Results data={this.state.data}/>
       </Body>
     );
   }
