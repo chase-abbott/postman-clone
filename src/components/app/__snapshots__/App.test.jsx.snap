@@ -2,8 +2,124 @@
 
 exports[`App component renders App 1`] = `
 <DocumentFragment>
-  <h1>
-    Hello World
-  </h1>
+  <div
+    class="sc-pNWdM qBtuQ"
+  >
+    <div
+      class="sc-jrsJWt hBxIsL"
+    >
+      MailMan
+    </div>
+    <form
+      class="sc-gtsrHT bZDDbN"
+    >
+      <input
+        class="sc-dlnjwi gtridS"
+        name="urlInput"
+        type="text"
+        value=""
+      />
+      <div
+        class="sc-hKFxyN evtFDh"
+      >
+        <div
+          class="sc-eCApnc fVYseP"
+        >
+          <label
+            class="sc-jSFjdj kzdrNt"
+          >
+             GET 
+          </label>
+          <input
+            class="sc-gKAaRy cTlvQw"
+            name="selector"
+            type="radio"
+            value="GET"
+          />
+        </div>
+        <div
+          class="sc-eCApnc fVYseP"
+        >
+          <label
+            class="sc-jSFjdj kzdrNt"
+          >
+             POST 
+          </label>
+          <input
+            class="sc-gKAaRy cTlvQw"
+            name="selector"
+            type="radio"
+            value="POST"
+          />
+        </div>
+        <div
+          class="sc-eCApnc fVYseP"
+        >
+          <label
+            class="sc-jSFjdj kzdrNt"
+          >
+             PUT 
+          </label>
+          <input
+            class="sc-gKAaRy cTlvQw"
+            name="selector"
+            type="radio"
+            value="PUT"
+          />
+        </div>
+        <div
+          class="sc-eCApnc fVYseP"
+        >
+          <label
+            class="sc-jSFjdj kzdrNt"
+          >
+             PATCH 
+          </label>
+          <input
+            class="sc-gKAaRy cTlvQw"
+            name="selector"
+            type="radio"
+            value="PATCH"
+          />
+        </div>
+        <div
+          class="sc-eCApnc fVYseP"
+        >
+          <label
+            class="sc-jSFjdj kzdrNt"
+          >
+             DELETE 
+          </label>
+          <input
+            class="sc-gKAaRy cTlvQw"
+            name="selector"
+            type="radio"
+            value="DELETE"
+          />
+        </div>
+        <button
+          class="sc-iCoGMd kxYXNQ"
+        >
+           Go 
+        </button>
+      </div>
+      <textarea
+        class="sc-fujyAs fcMhcn"
+        name="body"
+        placeholder="Raw JSON Body"
+      />
+    </form>
+    <pre
+      class="sc-bdnxRM qMVbX"
+    >
+       [
+  {
+    "root": {
+      "Yo": "Make a Fetch!"
+    }
+  }
+] 
+    </pre>
+  </div>
 </DocumentFragment>
 `;
