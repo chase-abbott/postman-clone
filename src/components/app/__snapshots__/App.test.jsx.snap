@@ -14,13 +14,14 @@ exports[`App component renders App 1`] = `
       class="sc-gtsrHT bZDDbN"
     >
       <input
-        class="sc-dlnjwi gtridS"
+        class="sc-dlnjwi ebyqvk"
+        data-testid="search-bar"
         name="urlInput"
         type="text"
         value=""
       />
       <div
-        class="sc-hKFxyN evtFDh"
+        class="sc-hKFxyN eHVPT"
       >
         <div
           class="sc-eCApnc fVYseP"
@@ -99,6 +100,7 @@ exports[`App component renders App 1`] = `
         </div>
         <button
           class="sc-iCoGMd kxYXNQ"
+          data-testid="submit-button"
         >
            Go 
         </button>

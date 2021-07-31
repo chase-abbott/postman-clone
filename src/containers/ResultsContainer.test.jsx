@@ -1,14 +1,23 @@
 /* eslint-disable max-len */
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
-import ResultsContainer from './ResultsContainer.jsx';
+import RequestContainer from './RequestCointainer.jsx';
+
+// eslint-disable-next-line no-undef
+global.fetch = jest.fn(() => {
+  return Promise.resolve({
+    json: () => Promise.resolve()
+  });
+});
+
 
 describe('ResultsContainer component snapshot', () => {
-  it('tests the input ', () => {
-    render(<ResultsContainer/>);
+  it('tests the input ', async () => {
+    render(<RequestContainer/>);
 
-    const searchBar = screen.getByTestId('search-bar');
-    fireEvent.change(searchBar, { target: { value: 'https://last-airbender-api.herokuapp.com/api/v1/characters' } });
+    const submitButton = screen.getByTestId('submit-button');
+    fireEvent.click(submitButton);
+    expect(fetch).toHaveBeenCalledTimes(1);
     
   });
 });

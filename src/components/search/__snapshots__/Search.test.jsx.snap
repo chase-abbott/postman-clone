@@ -6,13 +6,14 @@ exports[`Search component snapshot Renders a search component on the page 1`] = 
     class="sc-bdnxRM eNlDXM"
   >
     <input
-      class="sc-gtsrHT kbxame"
+      class="sc-gtsrHT hHmYNM"
+      data-testid="search-bar"
       name="urlInput"
       type="text"
       value=""
     />
     <div
-      class="sc-dlnjwi jlHniZ"
+      class="sc-dlnjwi fyPUPv"
     >
       <div
         class="sc-hKFxyN eJFrPL"
@@ -91,6 +92,7 @@ exports[`Search component snapshot Renders a search component on the page 1`] = 
       </div>
       <button
         class="sc-gKAaRy dRChrM"
+        data-testid="submit-button"
       >
          Go 
       </button>

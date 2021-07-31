@@ -107,7 +107,7 @@ const Search = ({
             name="selector" 
             onChange={onMethodChange}></RadioInput>
         </RadioContainer>
-        <SubmitButton> Go </SubmitButton>
+        <SubmitButton data-testid="submit-button"> Go </SubmitButton>
       </InputBar>
       <JSONBody 
         placeholder="Raw JSON Body"
