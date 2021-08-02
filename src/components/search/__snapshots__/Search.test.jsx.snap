@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search component snapshot Renders a search component on the page 1`] = `
+<DocumentFragment>
+  <form
+    class="sc-bdnxRM eNlDXM"
+  >
+    <input
+      class="sc-gtsrHT hHmYNM"
+      data-testid="search-bar"
+      name="urlInput"
+      type="text"
+      value=""
+    />
+    <div
+      class="sc-dlnjwi fyPUPv"
+    >
+      <div
+        class="sc-hKFxyN eJFrPL"
+      >
+        <label
+          class="sc-eCApnc btdohc"
+        >
+           GET 
+        </label>
+        <input
+          class="sc-jSFjdj dAKPiI"
+          name="selector"
+          type="radio"
+          value="GET"
+        />
+      </div>
+      <div
+        class="sc-hKFxyN eJFrPL"
+      >
+        <label
+          class="sc-eCApnc btdohc"
+        >
+           POST 
+        </label>
+        <input
+          class="sc-jSFjdj dAKPiI"
+          name="selector"
+          type="radio"
+          value="POST"
+        />
+      </div>
+      <div
+        class="sc-hKFxyN eJFrPL"
+      >
+        <label
+          class="sc-eCApnc btdohc"
+        >
+           PUT 
+        </label>
+        <input
+          class="sc-jSFjdj dAKPiI"
+          name="selector"
+          type="radio"
+          value="PUT"
+        />
+      </div>
+      <div
+        class="sc-hKFxyN eJFrPL"
+      >
+        <label
+          class="sc-eCApnc btdohc"
+        >
+           PATCH 
+        </label>
+        <input
+          class="sc-jSFjdj dAKPiI"
+          name="selector"
+          type="radio"
+          value="PATCH"
+        />
+      </div>
+      <div
+        class="sc-hKFxyN eJFrPL"
+      >
+        <label
+          class="sc-eCApnc btdohc"
+        >
+           DELETE 
+        </label>
+        <input
+          class="sc-jSFjdj dAKPiI"
+          name="selector"
+          type="radio"
+          value="DELETE"
+        />
+      </div>
+      <button
+        class="sc-gKAaRy dRChrM"
+        data-testid="submit-button"
+      >
+         Go 
+      </button>
+    </div>
+    <textarea
+      class="sc-iCoGMd chwWKm"
+      name="body"
+      placeholder="Raw JSON Body"
+    />
+  </form>
+</DocumentFragment>
+`;
