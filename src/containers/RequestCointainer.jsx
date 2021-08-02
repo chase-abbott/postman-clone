@@ -1,7 +1,9 @@
+/* eslint-disable max-len */
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import Results from '../components/results/Results.jsx';
 import Search from '../components/search/Search.jsx';
+import { getRequest, requestWithBody } from '../utils.js';
 
 const Body = styled.div`
 display: flex;
@@ -51,26 +53,11 @@ export default class RequestContainer extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
     if(this.state.method !== 'GET'){
-      return fetch(this.state.urlInput, {
-        method: this.state.method,
-        headers: {
-          'Content-type': 'application/json; charset=UTF-8',
-        },
-        credentials: 'include',
-        body: this.state.body
-      })
-        .then(res => res.json())
-        .then(res => {
-          console.log(res);
-          return this.setState({ data: res });})
-        .catch(err => console.log(err));
+      return requestWithBody(this.state.urlInput, this.state.method, this.state.body)
+        .then(res => this.setState({ data: res }));
     } else {
-      return fetch(this.state.urlInput, {
-        method: this.state.method,
-      })
-        .then(res => res.json())
-        .then(res => this.setState({ data: res }))
-        .catch(err => console.log(err));
+      return getRequest(this.state.urlInput)
+        .then(res => this.setState({ data: res }));
     }
   }
 

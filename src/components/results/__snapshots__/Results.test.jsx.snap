@@ -4,6 +4,7 @@ exports[`Results component snapshot Renders a Results component on the page 1`] 
 <DocumentFragment>
   <pre
     class="sc-bdnxRM qMVbX"
+    data-testid="results"
   >
      [
   {

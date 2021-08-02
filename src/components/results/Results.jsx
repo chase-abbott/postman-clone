@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
@@ -13,7 +14,7 @@ justify-self: end;
 
 
 const Results = ({ data }) => {
-  return <ResultsArea> {JSON.stringify(data, null, 2) } </ResultsArea>;
+  return <ResultsArea data-testid="results"> {JSON.stringify(data, null, 2) } </ResultsArea>;
 };
 
 Results.propTypes = {
